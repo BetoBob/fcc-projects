@@ -49,11 +49,51 @@
                 <header>
                     <h2>Windows 10 Guide</h2>
                 </header>
+
+            <p>There are several options to accessing the Unix servers through Windows:</p>
+            <ul>
+                <li><a href="https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse">Installing OpenSSH</a>
+                <ul>
+                    <li>This allows you to SSH into the servers using the Windows Command Prompt</li>
+                    <li>Once OpenSSH is installed, follow the Mac OS / Linux Guide for login, using the Windows Command Prompt instead of a terminal</li>
+                </ul>
+                </li>
+
+                <li><a href="https://docs.microsoft.com/en-us/windows/wsl/install-win10">Installing a Linux Subsystem</a>
+                <ul>
+                    <li>This allows you to run Unix commands locally on your Windows machine</li>
+                    <li>Once the subsystem is installed, open the subsystem application and follow the Mac OS / Linux Guide for login</li>
+                </ul>
+                </li>
+
+                <li>Installing an SSH Client
+                <ul>
+                    <li>Third-party programs such as Putty and MobaXTerm save your login credentials</li>
+                </ul>
+                </li>
+            </ul>
             </section>
+
             <section class="main-section">
                 <header>
                     <h2>Other Notes</h2>
                 </header>
+                <ul>
+                    <li>Remember that some of your files can be made public if you do not include the proper permissions on them</li>
+                    <ul>
+                        <li>Learn about the <a href="https://ss64.com/bash/chmod.html">chmod command and file permissions</a> to ensure your files are not publicly visible</li>
+                    </ul>
+                    <li>You can use the www/ directory to host your own webpages!</li>
+                    <ul>
+                        <li>make sure you give read and execute permission to all users of the www/ directory using chmod</li>
+                        <li>create an index.html file, which will be the first page shown on your URL</li>
+                        <li>view your page at users.csc.calpoly/~[username]</li>
+                    </ul>
+                    <li>If you would like to transfer your own files to the server, use the <a href="https://en.wikipedia.org/wiki/Secure_copy_protocol">command scp</a></li>
+                    <ul>
+                        <li>You can also use FTP clients like <a href="https://filezilla-project.org/">FileZilla</a> or <a href="https://cyberduck.io/">Cyberduck</a> to access your remote file directory</li>
+                    </ul>
+                </ul>
             </section>
             <section class="main-section" id="useful-bash-commands">
                 <header>

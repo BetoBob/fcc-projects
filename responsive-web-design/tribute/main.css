@@ -1,0 +1,110 @@
+@font-face {
+    font-family: 'daftFont';
+    src: url('https://fontsfree.net//wp-content/fonts/script/trash/FontsFree-Net-Daft-Font.ttf'); 
+}
+
+body {
+    background-color:#151314;
+    text-align: center;
+    color:firebrick;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1 {
+    font-size: 80px;
+    font-family: daftFont; /* include fallback */
+}
+
+h3 {
+    font-size: 30px;
+    font-family: daftFont; /* include fallback */
+}
+
+#image {
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#tribute-info {
+    background-color: goldenrod; 
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: -8px; /* add too much px to left/right -> horizontal scroll */
+    margin-right: -8px;
+}
+
+p {
+    text-align: justify;
+    font-size: 20px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.album-info {
+    display: inline-block;
+}
+
+.album {
+    width: 300px;
+    height: 300px;
+}
+
+.album:hover {
+    border-style: solid;
+    border-color: white;
+    border-width: 5px;
+
+    /* compensation for border */
+    width: 290px;
+    height: 290px;
+}
+
+footer {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+a {
+    color: white;
+    padding: 0px 10px 0px 10px;
+}
+
+a:hover {
+    color: goldenrod;
+}
+
+@media (max-width: 900px) {
+    #image {
+        width: 400px;
+    }
+    h1 {
+        font-size: 50px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    p {
+        font-size: 16px;
+    }
+    .album-info {
+        max-width: 200px;
+        min-height: 275px;
+        margin: 0px 10px 0px 10px;
+    }
+    .album {
+        width: 200px;
+        height: 200px;
+    }
+    .album:hover {
+        border-width: 3px;
+    
+        /* compensation for border */
+        width: 195px;
+        height: 195px;
+    }
+}

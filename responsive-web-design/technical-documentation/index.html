@@ -1,0 +1,70 @@
+<html>
+    <header>
+        <title>Unix Documentation</title>
+    </header>
+    <body>
+        <!-- script for testing FCC requirements -->
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+        <!-- main content of page (technical documentation)-->
+        <main id="main-doc">
+
+            <section class="main-section" id="introduction">
+                <header>
+                    <h2>Introduction</h2>
+                </header>
+                <p>As a computing student, you have access to the CSC Unix servers that come with 5GB of storage for your classes and projects. These servers run the Linux distribution CentOS 7. They can be used for:</p>
+                <ul>
+                    <li>Storing and editing code</li>
+                    <li>Compiling and running executables</li>
+                    <li>Turning in homework assignments (via the tool <i>handin</i>)</li>
+                    <li>Hosting static web pages on the csc.calpoly.edu domain</li>
+                </ul>
+                <p>You will have access to servers named unix1, unix2, …, unix5. These servers and the lab workstations are connected by a shared file system, which means any file you create / upload on one system can be accessed on another as long as it is saved in your home directory.</p>
+                <p>Unlike a traditional desktop environment with a graphical user interface, you will navigate the system using the command line provided by a program, called the shell. The default shell is called Bash (Bourne again shell), which has its own "language" for interfacing with the computer. You will want to familiarize yourself with some of the basic Bash file and directory commands. (<a href="#useful-bash-commands">see table below</a>)
+                </p>
+            </section>
+
+            <section class="main-section" id="mac-linux-guide">
+                <header>
+                    <h2>Mac OS / Linux Guide</h2>
+                </header>
+                <p>Each server has a name used to identify and log into it This is what unix1’s address looks like, which can be replicated for the other Unix servers:</p>
+                <code>[uname]@unix1.csc.calpoly.edu</code>
+                <p>The uname is your unique Cal Poly username, which can be found at the beginning of your Cal Poly email address. Example: schan11@calpoly.edu, your uname is schan11</p>
+
+                <ol>
+                    <li>Open the terminal application on your computer (Mac: command + space and search “terminal”, Linux: Window Key, search for “terminal”)</li>
+                    <li>Type in the command ssh followed by the unix server address and click enter:</li>
+                    <code>ssh [uname]@unix1.csc.calpoly.edu</code><br>
+                    <img alt="step2-terminal" src="step2.png"></img>
+                    <li>If this is the first time you’ve logged into this server, a prompt will ask if you want to trust this server. It’s unlikely someone is trying to impersonate the server, so if you believe you’re connected to the “real” unix server, type yes and press enter.</li>
+                    <img alt="step3-terminal" src="step3.png"></img>
+                    <li>Finally, type in your Cal Poly password. This will be the same password you use to log into the Cal Poly portal</li>
+                    <li>You are now on one of the Unix servers! To logout, simply type logout in the terminal.</li>
+                </ol>
+            </section>
+
+            <section class="main-section">
+                <header>
+                    <h2>Windows 10 Guide</h2>
+                </header>
+            </section>
+            <section class="main-section">
+                <header>
+                    <h2>Other Notes</h2>
+                </header>
+            </section>
+            <section class="main-section" id="useful-bash-commands">
+                <header>
+                    <h2>Useful Bash Commands</h2>        
+                </header>
+
+                <!-- insert fancy smancy table here! -->
+
+                <a href=https://help.ubuntu.com/community/UsingTheTerminal>Ubuntu Guide to using the Bash terminal</a>
+
+            </section>
+        </main>
+    </body>
+</html>

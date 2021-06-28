@@ -1,7 +1,6 @@
 # Tribute Page
 
-## Requirements
-You can use HTML, JavaScript, and CSS to complete this project. Plain CSS is recommended because that is what the lessons have covered so far and you should get some practice with plain CSS. You can use Bootstrap or SASS if you choose. Additional technologies (just for example jQuery, React, Angular, or Vue) are not recommended for this project, and using them is at your own risk.
+* [sample FCC page]( https://codepen.io/freeCodeCamp/pen/zNqgVx)
 
 ## User Stories
 1. My tribute page should have an element with a corresponding id="main", which contains all other elements.
@@ -16,16 +15,11 @@ You can use HTML, JavaScript, and CSS to complete this project. Plain CSS is rec
 
 ## Resources
 - font: https://www.dafont.com/daft-font.font
-- example project: https://codepen.io/freeCodeCamp/pen/zNqgVx
 - parallex links:
     - https://www.okgrow.com/posts/css-only-parallax
     - https://codepen.io/karldanninger/pen/NwzMzN
 
 ## Goals
-- remove index.html from url
-- make it mobile friendly
-
-## Stretch Goals
 - add parallex effect (between intro and artist info dividers)
     - could effect mobile experience
 - add a photo gallery
@@ -33,3 +27,4 @@ You can use HTML, JavaScript, and CSS to complete this project. Plain CSS is rec
 - add spotify embedded playlist (or youtube video)
 - add nav-bar when page gets big
 - add rainbow effects! (maybe for Discovery title)
+

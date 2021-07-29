@@ -1,0 +1,45 @@
+* {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0 0; /* lets navbar hug the side */
+}
+
+main {
+  margin-left: 250px; /* amount needed to counter width of */
+  padding: 0 25; /* space between body content and navbar */
+}
+
+/* navbar */
+
+#navbar {
+  position: fixed;
+  top: 0; /* moves navbar to top-left corner of screen */
+  width: 250px;
+  height: 100%;
+  background-color: aliceblue;
+}
+
+nav header {
+  margin: 0 20 auto;
+  display: block;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  margin:10 auto;
+}
+
+nav ul li a {
+  text-decoration: none;
+}
+
+nav img {
+  height: 100px;
+  margin: 25 auto;
+  display: block;
+}

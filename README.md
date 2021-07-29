@@ -1,4 +1,6 @@
 # fcc-projects
 
-https://htmlpreview.github.io/?https://github.com/BetoBob/fcc-projects/blob/main/responsive-web-design/tribute/index.html
+This is a repository hosting the code and some images for my [freecodecamp.org](https://www.freecodecamp.org/) projects. I am doing this to better understand front end web development.
+
+To see the pages I have created, check out my [codepen.io](https://codepen.io/BetoBob) account!
 

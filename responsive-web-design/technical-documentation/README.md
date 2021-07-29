@@ -4,6 +4,8 @@ For this, I might want to make a technical documentation page for using Unix ser
 
 * [example FCC page](https://codepen.io/freeCodeCamp/full/NdrKKL)
 
+**Note:** It's important to hard-code the `px` values even if some browsers don't require it.
+
 ## User Stories
 
 ### main

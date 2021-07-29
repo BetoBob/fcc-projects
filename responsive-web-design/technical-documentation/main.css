@@ -11,6 +11,50 @@ main {
   padding: 0 25; /* space between body content and navbar */
 }
 
+hr {
+  width: 85%;
+  color: lightgrey;
+  margin-top: 40;
+}
+
+iframe {
+  margin-left: 40;
+  margin-top: 15;
+  margin-bottom: 15;
+}
+
+/* code */
+
+/* I copied the MDN Web Docs CSS for <code> */
+
+code {
+  background-color: aliceblue;
+  font-family: 'Courier New', Courier, monospace; 
+}
+
+li {
+  margin: 10 auto;
+}
+
+/* table */
+
+/* used a table generator and copied styling */
+
+.tg {
+  border-collapse:collapse;border-spacing:0;
+}
+
+.tg td {
+  border-color:black;
+  border-style:solid;
+  border-width:1px;
+  font-family:Arial, sans-serif;
+  font-size:14px;
+  overflow:hidden;
+  padding:10px 5px;
+  word-break:normal;
+}
+
 /* navbar */
 
 #navbar {
@@ -22,16 +66,19 @@ main {
 }
 
 nav header {
-  margin: 0 20 auto;
+  text-align: center;
+  font-size: large;
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0 0 25 0;
   display: block;
+}
+
+nav p {
+  margin: 0 20 auto;
 }
 
 nav ul {
   list-style-type: none;
-}
-
-nav ul li {
-  margin:10 auto;
 }
 
 nav ul li a {
@@ -42,4 +89,16 @@ nav img {
   height: 100px;
   margin: 25 auto;
   display: block;
+}
+
+/* hides navbar at certain width */
+@media only screen and (max-width: 650px) {
+  #navbar {
+    all: revert;
+    display: none;
+    visibility: hidden;
+  }
+  main {
+    margin-left: 0px;
+  }
 }

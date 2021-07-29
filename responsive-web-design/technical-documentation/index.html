@@ -12,20 +12,29 @@
         <!-- navbar here -->
         <nav id="navbar">
             <img src="img/tux.png" alt="tux.jpg">
-            <header>Unix Documentation</header>
+            <strong><header>Unix Documentation</header></strong>
+
+            <hr>
+            <p>Table of Contents</p>
             <ul>
-                <li><a href="#">Introduction</a></li>
-                <li><a href="#">Mac OS and Linux Guide</a></li>
-                <li><a href="#Windows_10_Guide">Windows 10 Guide</a></li>
-                <li><a href="#Other_Notes">Other Notes</a></li>
-                <li><a href="#Useful_Bash_Commands">Useful Bash Commands</a></li>
+                <li><a href="#Introduction" class="nav-link">Introduction</a></li>
+                <li><a href="#Mac_OS_and_Linux_Guide" class="nav-link">Mac OS and Linux Guide</a></li>
+                <li><a href="#Windows_10_Guide" class="nav-link">Windows 10 Guide</a></li>
+                <li><a href="#Other_Notes" class="nav-link">Other Notes</a></li>
+                <li><a href="#Useful_Bash_Commands" class="nav-link">Useful Bash Commands</a></li>
             </ul>
-            <header>Useful Resources</header>
+
+            <hr>
+            <p>Useful Resources</p>
             <ul>
-                <li><a href="#">Resource One</a></li>
-                <li><a href="#">Resource One</a></li>
-                <li><a href="#">Resource One</a></li>
+                <li><a href="https://csc.calpoly.edu/">Cal Poly CSC Department</a></li>
+                <li><a href="https://help.ubuntu.com/community/UsingTheTerminal">Bash Terminal Guide</a></li>
+                <li><a href="https://code.visualstudio.com/docs/remote/ssh-tutorial">SSH Beginners Guide</a></li>
+                <li><a href="https://docs.microsoft.com/en-us/windows/wsl/install-win10">Linux for Windows (WSL)</a></li>
+                <li><a href="https://code.visualstudio.com/docs/remote/ssh-tutorial">VS Code SSH Guide</a></li>
             </ul>
+            
+
         </nav>
 
         <!-- main content of page (technical documentation)-->
@@ -42,11 +51,13 @@
                     <li>Storing and editing code</li>
                     <li>Compiling and running executables</li>
                     <li>Turning in homework assignments (via the tool <i>handin</i>)</li>
-                    <li>Hosting static web pages on the csc.calpoly.edu domain</li>
+                    <li>Hosting static web pages on the <code>csc.calpoly.edu</code> domain</li>
                 </ul>
-                <p>You will have access to servers named unix1, unix2, …, unix5. These servers and the lab workstations are connected by a shared file system, which means any file you create / upload on one system can be accessed on another as long as it is saved in your home directory.</p>
+                <p>You will have access to servers named <code>unix1</code>, <code>unix2</code>, …, <code>unix5</code>. These servers and the lab workstations are connected by a shared file system, which means any file you create / upload on one system can be accessed on another as long as it is saved in your home directory.</p>
                 <p>Unlike a traditional desktop environment with a graphical user interface, you will navigate the system using the command line provided by a program, called the shell. The default shell is called Bash (Bourne again shell), which has its own "language" for interfacing with the computer. You will want to familiarize yourself with some of the basic Bash file and directory commands. (<a href="#Useful_Bash_Commands">see table below</a>)
                 </p>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ORcvSkgdA58" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </section>
 
             <section class="main-section" id="Mac_OS_and_Linux_Guide">
@@ -67,6 +78,8 @@
                     <li>Finally, type in your Cal Poly password. This will be the same password you use to log into the Cal Poly portal</li>
                     <li>You are now on one of the Unix servers! To logout, simply type logout in the terminal.</li>
                 </ol>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/v45p_kJV9i4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </section>
 
             <section class="main-section" id="Windows_10_Guide">
@@ -97,6 +110,8 @@
                 </li>
             </ul>
 
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/48k317kOxqg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
             </section>
 
             <section class="main-section" id="Other_Notes">
@@ -112,7 +127,7 @@
                 <ul>
                     <li>make sure you give read and execute permission to all users of the www/ directory using chmod</li>
                     <li>create an index.html file, which will be the first page shown on your URL</li>
-                    <li>view your page at users.csc.calpoly/~[username]</li>
+                    <li>view your page at <code>users.csc.calpoly/~[username]</code></li>
                 </ul>
 
                 <p>If you have any further questions or run into any issues on the server, contact the CSL Student Technician office or the Linux Administrator with your questions or concerns.</p>
@@ -124,8 +139,74 @@
                 </header>
 
                 <!-- insert fancy smancy table here! -->
+                <table class="tg">
+                    <thead>
+                      <tr>
+                        <th class="tg-0pky">Command</th>
+                        <th class="tg-0pky">Description</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="tg-0pky"><code>ls [l]</code></td>
+                        <td class="tg-0pky">list all directories, [l] flag shows long format</td>
+                      </tr>
+                      <tr>
+                        <td class="tg-0pky"><code>pwd</code></td>
+                        <td class="tg-0pky">show the current directory you are in</td>
+                      </tr>
+                      <tr>
+                        <td class="tg-0pky"><code>cd [directory]</code><br><code>cd ~</code><br><code>cd ..</code><br></td>
+                        <td class="tg-0pky">change directory<br>go to root directory<br>go back to previous directory<br></td>
+                      </tr>
+                      <tr>
+                        <td class="tg-0pky"><code>cat [file]</code></td>
+                        <td class="tg-0pky">show contents of a text file</td>
+                      </tr>
+                      <tr>
+                        <td class="tg-0pky"><code>touch file</code></td>
+                        <td class="tg-0pky">create a new file (ex: touch main.py)</td>
+                      </tr>
+                      <tr>
+                        <td class="tg-0pky"><code>vim [file]</code></td>
+                        <td class="tg-0pky">edit a file</td>
+                      </tr>
+                      <tr>
+                        <td class="tg-0pky"><code>cp [file] [new_file]</code></td>
+                        <td class="tg-0pky">copy a file</td>
+                      </tr>
+                      <tr>
+                        <td class="tg-0pky"><code>rm [file]</code></td>
+                        <td class="tg-0pky">remove a file</td>
+                      </tr>
+                      <tr>
+                        <td class="tg-0pky"><code>mv [file1] [file2]</code></td>
+                        <td class="tg-0pky">move file to a new location<br>rename a file<br></td>
+                      </tr>
+                      <tr>
+                        <td class="tg-0pky"><code>mkdir [dir_name]</code></td>
+                        <td class="tg-0pky">make a new directory</td>
+                      </tr>
+                      <tr>
+                        <td class="tg-0pky"><code>rm -r [dir_name]</code></td>
+                        <td class="tg-0pky">remove a directory<br><span style="color:#FE0000">(warning! removes all contents inside it)</span><br></td>
+                      </tr>
+                      <tr>
+                        <td class="tg-0pky"><code>man [command]</code></td>
+                        <td class="tg-0pky">learn more about a command</td>
+                      </tr>
+                      <tr>
+                        <td class="tg-0pky"><code>history</code></td>
+                        <td class="tg-0pky">list all previous commands that have been used</td>
+                      </tr>
+                      <tr>
+                        <td class="tg-0lax">(up arrow) and (down arrow)</td>
+                        <td class="tg-0lax">cycle through previous commands<br></td>
+                      </tr>
+                    </tbody>
+                    </table>
 
-                <a href=https://help.ubuntu.com/community/UsingTheTerminal>Ubuntu Guide to using the Bash terminal</a>
+                    <br>
 
             </section>
         </main>

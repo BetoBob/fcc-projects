@@ -3,8 +3,115 @@
         <title>Survey</title>
     </head>
     <body>
-        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-        <h1 id="title">Survey</h1>
+        <h1 id="title">Beto's Bakery</h1>
+        <h2>Catering Survey</h2>
         <p id="description">We would like to a take a brief survey on this subject. Thanks!</p>
+
+        <form id="survey-form">
+            
+            <!-- name -->
+            <div>
+                <label for="name" id="name-label">Enter your name: </label>
+                <input type="text" name="name" id="name" placeholder="John Doe" required>
+            </div>
+
+            <!-- email -->
+            <div>
+                <label for="email" id="email-label">Enter your email: </label>
+                <input type="email" name="email" id="email" placeholder="johndoe@example.com" required>
+            </div>
+
+            <!-- number -->
+            <div>
+                <label for="number" id="number-label">Enter your order id: </label>
+                <input type="number" name="number" id="number" min="1" max="5" placeholder="3" required>
+            </div>
+
+            <!-- dropdown -->
+            <div>
+                <label for="location">Select from the dropdown: </label>
+                <select id="dropdown" name="location" required>
+                    <option disabled selected value> -- select an option -- </option>
+                    <option value="ankeny">Ankeny</option>
+                    <option value="downtown">Downtown Des Moines</option>
+                    <option value="urbandale">Urbandale</option>
+                    <option value="west">West Des Moines</option>
+                </select>
+            </div>
+
+            <!-- radio -->
+            <div>
+                <label for="radio">Rate our service: </label>
+                  
+                  <div>
+                    <input type="radio" id="poor" name="rating" value="1" required>
+                    <label for="poor">(1) Poor</label>
+                  </div>
+                  
+                  <div>
+                    <input type="radio" id="subpar" name="rating" value="2">
+                    <label for="dewey">(2) Subpar</label>
+                  </div>
+                  
+                  <div>
+                    <input type="radio" id="average" name="rating" value="3">
+                    <label for="louie">(3) Average</label>
+                  </div>
+
+                  <div>
+                    <input type="radio" id="good" name="rating" value="4">
+                    <label for="louie">(4) Good</label>
+                  </div>
+
+                  <div>
+                    <input type="radio" id="excellent" name="rating" value="5">
+                    <label for="louie">(5) Excellent</label>
+                  </div>
+            </div>
+
+            <!-- checkbox -->
+            <div>
+                <label for="checkbox">Select all options that apply: </label>
+                <div>
+                    <input type="checkbox" id="checkbox" name="time" value="time">
+                    <label for="time">Delivered on Time</label>
+                  </div>
+                  
+                  <div>
+                    <input type="checkbox" id="checkbox" name="customer-service" value="customer-service">
+                    <label for="customer-service">Friendly Customer Service</label>
+                  </div>
+
+                  <div>
+                    <input type="checkbox" id="checkbox" name="damage" value="damage">
+                    <label for="damage">Package Arrived Undamaged</label>
+                  </div>
+
+                  <div>
+                    <input type="checkbox" id="checkbox" name="fresh" value="fresh">
+                    <label for="fresh">Goods Fresh on Arrival</label>
+                  </div>
+
+                  <div>
+                    <input type="checkbox" id="checkbox" name="order" value="order">
+                    <label for="order">Goods Match Order Description</label>
+                  </div>
+            </div>
+
+            <!-- textarea -->
+            <div>
+                <label for="textarea">Enter any additional feedback here: </label>
+                <textarea id="textarea" name="textarea" rows="5" cols="33">
+
+                </textarea>
+            </div>
+
+            <button type="submit" id="submit" form="survey-form" value="submit">Submit Survey</button>
+
+        </form>
+
+        <!-- freecodecamp tester -->
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
     </body>
 </html>

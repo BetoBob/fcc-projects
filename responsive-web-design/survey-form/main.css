@@ -27,6 +27,7 @@ body {
     border-radius: 25px;
     max-width: 1000px;
     min-width: 600px;
+    padding-bottom: 10px;
 }
 
 #title {
@@ -46,7 +47,6 @@ body {
 #intro p {
     margin-left: 10%;
     margin-right: 10%;
-    padding-bottom: 25px;
     color: dimgrey;
     font-size: 16px;
 }
@@ -72,8 +72,13 @@ body {
     padding-top: 50px;
 }
 
+.required:after {
+    content:" *";
+    color: red;
+}
+
 .single-line {
-    width: 460px;
+    width: 475px;
     font-size: 16px;
     height: 30px;
     margin-top: 10px;
@@ -101,7 +106,13 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
+/* dropdown */
 #dropdown {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+option {
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
 }
@@ -129,7 +140,7 @@ label {
 textarea {
     margin-top: 10px;
     width: 400px;
-    max-width: 75%;
+    max-width: 85%;
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
 }
@@ -137,11 +148,11 @@ textarea {
 button {
     margin: 50px auto;
     display: block;
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 25px;
     background-color: goldenrod;
-    padding: 15px 32px;
-    border-radius: 50%;
-    color: whitesmoke;
-    border: 0px;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 100%;
+    border: 2px solid black;
 }

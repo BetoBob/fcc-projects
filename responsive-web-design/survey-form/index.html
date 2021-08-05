@@ -8,33 +8,35 @@
           <h1 id="title">Beto's Bakery</h1>
           <h2>Delivery Survey</h2>
           <p id="description">Thank you for ordering from Beto's Bakery! We'd appreciate if you filled out this survey so we can improve our delivery experience. Once this survey is completed, you will have the chance to win a $10 Beto's Bakery gift card! (Terms and Restrictions Apply)</p>
+
+          <p><strong>Note:</strong> required fields are marked with an asterisk (*)</p>
         </div>
 
         <form id="survey-form">
             
             <!-- name -->
             <div class="survey-section">
-                <label for="name" id="name-label">Enter your name: </label>
+                <label for="name" id="name-label" class="required">Enter your name: </label>
                 <br>
                 <input type="text" name="name" id="name" class="single-line" placeholder="John Doe" required>
             </div>
 
             <!-- email -->
             <div class="survey-section">
-                <label for="email" id="email-label">Enter your email: </label>
+                <label for="email" id="email-label" class="required">Enter your email: </label>
                 <br>
                 <input type="email" name="email" id="email" class="single-line" placeholder="johndoe@example.com" required>
             </div>
 
             <!-- number -->
             <div class="survey-section">
-                <label for="number" id="number-label">Enter your order id: </label>
+                <label for="number" id="number-label" class="required">Enter your order id: </label>
                 <input type="number" name="number" id="number" min="1" max="9999" pattern="[0-9]{4}" placeholder="1234" required>
             </div>
 
             <!-- dropdown -->
             <div class="survey-section" id="first-four">
-                <label for="location">Select vendor location: </label>
+                <label for="location" class="required">Select vendor location: </label>
                 <select id="dropdown" name="location" required>
                     <option disabled selected value> -- select a city -- </option>
                     <option value="ankeny">Ankeny</option>
@@ -46,7 +48,7 @@
 
             <!-- radio -->
             <div class="survey-section">
-                <label for="radio">Rate our service: </label>
+                <label for="radio" class="required">Rate our service: </label>
                   
                   <div class="radio-option">
                     <input type="radio" id="poor" name="rating" value="1" required>
@@ -112,7 +114,7 @@
                 </textarea>
             </div>
 
-            <button class="center"  type="submit" id="submit" form="survey-form" value="submit">submit</button>
+            <button class="center"  type="submit" id="submit" form="survey-form" value="submit"><strong>Submit >></strong></button>
 
         </form>
 

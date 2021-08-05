@@ -23,7 +23,7 @@ body {
     margin: auto;
     width: 75%;
     outline: 5px white;
-    background-color: whitesmoke;
+    background-image: url('img/bakery-3.jpg');
     border-radius: 25px;
     max-width: 1000px;
     min-width: 600px;
@@ -32,23 +32,29 @@ body {
 
 #title {
     text-align: center;
-    color: goldenrod;
+    color:goldenrod;
     font-family: panera;
     font-size: 50px;
     padding-top: 30px;
+    text-shadow: 2px 2px 0px #294634;
 }
 
 #intro h2 {
     text-align: center;
     font-family: 'Shadows Into Light', cursive;
+    color: whitesmoke;
+    text-shadow: 2px 2px 0px #294634;
     font-size: 40px;
 }
 
-#intro p {
-    margin-left: 10%;
-    margin-right: 10%;
-    color: dimgrey;
+.description {
     font-size: 16px;
+    background-color: rgb(245, 245, 245, 0.8);
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-bottom: 25px;
 }
 
 /* Survey Section */

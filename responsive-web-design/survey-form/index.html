@@ -1,37 +1,42 @@
 <html>
     <head>
-        <title>Survey</title>
+        <title>Delivery Survey</title>
+        <link rel="stylesheet" href="main.css">
     </head>
     <body>
-        <h1 id="title">Beto's Bakery</h1>
-        <h2>Catering Survey</h2>
-        <p id="description">We would like to a take a brief survey on this subject. Thanks!</p>
+        <div id="intro">
+          <h1 id="title">Beto's Bakery</h1>
+          <h2>Delivery Survey</h2>
+          <p id="description">Thank you for ordering from Beto's Bakery! We'd appreciate if you filled out this survey so we can improve our delivery experience. Once this survey is completed, you will have the chance to win a $10 Beto's Bakery gift card! (Terms and Restrictions Apply)</p>
+        </div>
 
         <form id="survey-form">
             
             <!-- name -->
-            <div>
+            <div class="survey-section">
                 <label for="name" id="name-label">Enter your name: </label>
-                <input type="text" name="name" id="name" placeholder="John Doe" required>
+                <br>
+                <input type="text" name="name" id="name" class="single-line" placeholder="John Doe" required>
             </div>
 
             <!-- email -->
-            <div>
+            <div class="survey-section">
                 <label for="email" id="email-label">Enter your email: </label>
-                <input type="email" name="email" id="email" placeholder="johndoe@example.com" required>
+                <br>
+                <input type="email" name="email" id="email" class="single-line" placeholder="johndoe@example.com" required>
             </div>
 
             <!-- number -->
-            <div>
+            <div class="survey-section">
                 <label for="number" id="number-label">Enter your order id: </label>
-                <input type="number" name="number" id="number" min="1" max="5" placeholder="3" required>
+                <input type="number" name="number" id="number" min="1" max="9999" pattern="[0-9]{4}" placeholder="1234" required>
             </div>
 
             <!-- dropdown -->
-            <div>
-                <label for="location">Select from the dropdown: </label>
+            <div class="survey-section" id="first-four">
+                <label for="location">Select vendor location: </label>
                 <select id="dropdown" name="location" required>
-                    <option disabled selected value> -- select an option -- </option>
+                    <option disabled selected value> -- select a city -- </option>
                     <option value="ankeny">Ankeny</option>
                     <option value="downtown">Downtown Des Moines</option>
                     <option value="urbandale">Urbandale</option>
@@ -40,73 +45,74 @@
             </div>
 
             <!-- radio -->
-            <div>
+            <div class="survey-section">
                 <label for="radio">Rate our service: </label>
                   
-                  <div>
+                  <div class="radio-option">
                     <input type="radio" id="poor" name="rating" value="1" required>
                     <label for="poor">(1) Poor</label>
                   </div>
                   
-                  <div>
+                  <div class="radio-option">
                     <input type="radio" id="subpar" name="rating" value="2">
                     <label for="dewey">(2) Subpar</label>
                   </div>
                   
-                  <div>
+                  <div class="radio-option">
                     <input type="radio" id="average" name="rating" value="3">
                     <label for="louie">(3) Average</label>
                   </div>
 
-                  <div>
+                  <div class="radio-option"v>
                     <input type="radio" id="good" name="rating" value="4">
                     <label for="louie">(4) Good</label>
                   </div>
 
-                  <div>
+                  <div class="radio-option">
                     <input type="radio" id="excellent" name="rating" value="5">
                     <label for="louie">(5) Excellent</label>
                   </div>
             </div>
 
             <!-- checkbox -->
-            <div>
+            <div class="survey-section" id="check">
                 <label for="checkbox">Select all options that apply: </label>
-                <div>
+                  
+                  <div class="checkbox-unit">
                     <input type="checkbox" id="checkbox" name="time" value="time">
                     <label for="time">Delivered on Time</label>
                   </div>
                   
-                  <div>
+                  <div class="checkbox-unit">
                     <input type="checkbox" id="checkbox" name="customer-service" value="customer-service">
                     <label for="customer-service">Friendly Customer Service</label>
                   </div>
 
-                  <div>
+                  <div class="checkbox-unit">
                     <input type="checkbox" id="checkbox" name="damage" value="damage">
                     <label for="damage">Package Arrived Undamaged</label>
                   </div>
 
-                  <div>
+                  <div class="checkbox-unit">
                     <input type="checkbox" id="checkbox" name="fresh" value="fresh">
                     <label for="fresh">Goods Fresh on Arrival</label>
                   </div>
 
-                  <div>
+                  <div class="checkbox-unit">
                     <input type="checkbox" id="checkbox" name="order" value="order">
                     <label for="order">Goods Match Order Description</label>
                   </div>
             </div>
 
             <!-- textarea -->
-            <div>
+            <div class="survey-section">
                 <label for="textarea">Enter any additional feedback here: </label>
+                <br>
                 <textarea id="textarea" name="textarea" rows="5" cols="33">
-
                 </textarea>
             </div>
 
-            <button type="submit" id="submit" form="survey-form" value="submit">Submit Survey</button>
+            <button class="center"  type="submit" id="submit" form="survey-form" value="submit">submit</button>
 
         </form>
 

@@ -46,6 +46,18 @@
 
 I am going to do a shipping survey. I will pretend this is for a local bakery with multiple locations in a metro area. This is a survey to rate their catering services.
 
+## style
+
 * Beto's Bakery lol
 * get styling ideas from Panera Bread
+  * background colors especially
+* background image of a bakery
+* content center justified
+  * create class for form elements, space them out accordingly
+
+## content
+
+Description:
+
+Thank you for ordering from Beto's Bakery! We'd appreciate if you filled out this survey so we can improve our delivery experience. Once this survey is completed, you will have the chance to win a $10 Beto's Bakery coupon! (Terms and Restrictions Apply)
 

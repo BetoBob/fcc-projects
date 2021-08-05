@@ -1,0 +1,147 @@
+/* font imports */
+
+/* shadows into light */
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+/* roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+/* panera (replace with a google font */
+@font-face {
+    font-family: panera;
+    src: url(panera.ttf);
+  }
+
+body {
+    background-color: #294634;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* intro section */
+/* note: should do inheritance with survey-fom and intro properties */
+#intro {
+    margin: auto;
+    width: 75%;
+    outline: 5px white;
+    background-color: whitesmoke;
+    border-radius: 25px;
+    max-width: 1000px;
+    min-width: 600px;
+}
+
+#title {
+    text-align: center;
+    color: goldenrod;
+    font-family: panera;
+    font-size: 50px;
+    padding-top: 30px;
+}
+
+#intro h2 {
+    text-align: center;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 40px;
+}
+
+#intro p {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-bottom: 25px;
+    color: dimgrey;
+    font-size: 16px;
+}
+
+/* Survey Section */
+
+#survey-form {
+    margin: auto;
+    width: 75%;
+    outline: 1px white;
+    background-color: whitesmoke;
+    border-radius: 25px;
+    font-size: 20px;
+    max-width: 1000px;
+    min-width: 600px;
+    padding-bottom: 5px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+.survey-section{
+    margin-left: 10%;
+    padding-top: 50px;
+}
+
+.single-line {
+    width: 460px;
+    font-size: 16px;
+    height: 30px;
+    margin-top: 10px;
+}
+
+/* number CSS */
+
+#number {
+    width: 230px;
+    font-size: 16px;
+    height: 30px;
+    margin-left: 35px;
+}
+
+/* Remove number arrows */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+#dropdown {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* radio buttons */
+
+.radio-option {
+    padding-top: 10px;
+}
+
+input[type=radio] {
+    border: 0px;
+    width: 16px;
+    height: 16px;
+}
+
+.checkbox-unit {
+    padding-top: 10px;
+}
+
+label {
+    margin-right: 25px;
+}
+
+textarea {
+    margin-top: 10px;
+    width: 400px;
+    max-width: 75%;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+button {
+    margin: 50px auto;
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    background-color: goldenrod;
+    padding: 15px 32px;
+    border-radius: 50%;
+    color: whitesmoke;
+    border: 0px;
+}

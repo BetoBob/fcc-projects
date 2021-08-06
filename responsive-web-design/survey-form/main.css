@@ -162,3 +162,7 @@ button {
     border-radius: 100%;
     border: 2px solid black;
 }
+
+button:hover {
+    color: white;
+}

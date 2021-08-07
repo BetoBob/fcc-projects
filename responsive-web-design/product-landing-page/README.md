@@ -1,14 +1,16 @@
 # Product Landing Page
 
 * [sample FCC page](https://codepen.io/freeCodeCamp/full/RKRbwL)
+* ALT + Shift + 5 for strikethrough
+  * alternative, use `~~content~~` 
 
 ## User Stories
 
 ### header
 
-1. My product landing page should have a `header` element with a corresponding `id="header"`.
+1. ~~My product landing page should have a `header` element with a corresponding `id="header"`.~~
 
-2. I can see an image within the `header` element with a corresponding `id="header-img"`. A company logo would make a good image here.
+2. ~~I can see an image within the `header` element with a corresponding `id="header-img"`. A company logo would make a good image here.~~
 
 #### nav-bar
 
@@ -31,7 +33,53 @@
 
 ### other
 
-6. I can watch an embedded product video with `id="video"`.
+6. ~~I can watch an embedded product video with `id="video"`.~~
 
 14. My product landing page should have at least one media query.
 15. My product landing page should utilize CSS flexbox at least once.
+
+## layout
+
+I think I am going to do the bakery theme again, only this time using Scornovacca's Bakery as a reference. I can use the menu of the bakery as a reference.
+
+### Home 
+
+* description of restaurant
+* email fill-out
+* embed a map
+
+I'd prefer to have a professional video of the bakery here, but the only video I could find that was Scorno's related was for Scorno's pizza. So for now I am just going to have a vintage video of Scorno's pizza at the bottom of the page.
+
+### Menu
+
+* left side is pastery menu
+
+* right side is lunch menu 
+
+Honestly seems kind of barren, might want to animate the menus to enlarge them or something. Make sure the max sizes are the same.
+
+### Photos
+
+I am going to start by using flexbox to show a couple of embeded content photos from the bakery:
+
+* https://www.facebook.com/scornosbakery/photos/?ref=
+
+In the future though, I would prefer to have a photo album to show these posts. Just because I think it would look better. 
+
+### About
+
+* links (put on bottom right)
+  * link to Facebook Page
+  * link to scornos
+  * link to order page
+
+Scorno's Restaurant and Bakery! Family owned since 1972!
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/nKtlZ3EITvc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+* https://youtu.be/nKtlZ3EITvc
+
+## resources
+
+* [CSS Font-Size: em vs. px vs. pt vs. percent](https://kyleschaeffer.com/css-font-size-em-vs-px-vs-pt-vs-percent)
+  * I am going to try using `em` rather than `px` for this project to see how better it scales

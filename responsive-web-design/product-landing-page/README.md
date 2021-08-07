@@ -45,26 +45,9 @@ I think I am going to do the bakery theme again, only this time using Scornovacc
 ### Home 
 
 * description of restaurant
-* email fill-out
 * embed a map
 
 I'd prefer to have a professional video of the bakery here, but the only video I could find that was Scorno's related was for Scorno's pizza. So for now I am just going to have a vintage video of Scorno's pizza at the bottom of the page.
-
-### Menu
-
-* left side is pastery menu
-
-* right side is lunch menu 
-
-Honestly seems kind of barren, might want to animate the menus to enlarge them or something. Make sure the max sizes are the same.
-
-### Photos
-
-I am going to start by using flexbox to show a couple of embeded content photos from the bakery:
-
-* https://www.facebook.com/scornosbakery/photos/?ref=
-
-In the future though, I would prefer to have a photo album to show these posts. Just because I think it would look better. 
 
 ### About
 
@@ -86,3 +69,4 @@ Scorno's Restaurant and Bakery! Family owned since 1972!
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/FEmysQARWFU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+* [Flex guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)

@@ -93,6 +93,13 @@ h2 {
     margin-right: 5%;
 }
 
+.order-button {
+    display: block;
+    align-content: center;
+    background-color: goldenrod;
+    width: 6em
+}
+
 #home-images {
     display: flex;
     justify-content: center;
@@ -192,6 +199,47 @@ h3 {
     width: 60%;
     height: 25em;
     max-width: 45em;
+}
+
+/* form */
+
+#form {
+    display: block;
+    text-align: center;
+    font-size: 1.25em;
+}
+
+#form input {
+    font-size: 1em;
+}
+
+#email {
+    width: 20em;
+    margin-right: 1em;
+}
+
+#submit {
+    width: 5em;
+    background-color: seagreen;
+    color: white;
+    border-radius: 5em;
+}
+
+#submit:hover {
+    background-color: lime;
+}
+
+/* contact */
+
+#contact {
+    display: block;
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+#contact p {
+    margin-top: 1em;
 }
 
 /* media queries */

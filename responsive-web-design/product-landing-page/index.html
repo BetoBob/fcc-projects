@@ -8,37 +8,76 @@
     </head>
     <body>
         <header id="header">
-            <img src="./assets/bakery-logo.jpg" id="header-img" alt="bakery-logo.jpg" height=100px>
-            <nav id="nav-bar">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#menu">Menu</a></li>
-                    <li><a href="#photos">Photos</a></li>
-                    <li><a href="#about">About</a></li>
-                </ul>  
-            <nav>
+            <div class="container">
+                <img src="./assets/bakery-logo.jpg" id="header-img" alt="bakery-logo.jpg" height=100px>
+                <nav id="nav-bar">
+                    <ul>
+                        <li><a href="#home" class="nav-link">Home</a></li>
+                        <li><a href="#bakery" class="nav-link">Bakery</a></li>
+                        <li><a href="#sandwiches" class="nav-link">sandwiches</a></li>
+                        <li><a href="#about" class="nav-link">About</a></li>
+                    </ul>  
+                <nav>
+            </div>
         </header>
 
         <div id="home">
 
             <h1>Scornovacca's Bakery</h1>
 
-            <!-- google maps embed -->
+            <p>Family owned and operated local Italian bakery in the heart of South Des Moines. Homemade Italian Breads, Love drops, Pasta Sauce, Wanda’s and more!</p>
+
+            <br>
+
+            <p>Mon-Tue: Closed</p>
+            <p>Sun: 8am-2pm</p>
+            <p>Wed-Sat: 8am-4pm</p>
+
+            <div id="home-images">
+                <img class="home-img" src="./assets/outside.jpg" alt="outside.jpg">
+                <img class="home-img" src="./assets/shelf.jpg" alt="shelf.jpg">
+                <img class="home-img" src="./assets/items/peppermint-drops.jpg" alt="peppermint-drops.jpg">
+            </div>
+
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11941.970966424202!2d-93.6259064!3d41.5585792!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x38d27a99ba3025c1!2sScornovacca&#39;s%20Bakery!5e0!3m2!1sen!2sus!4v1628296064679!5m2!1sen!2sus" width="100%" height="500em" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
         </div>
 
-        <div id="menu">
-            <h2>Menu</h2>
+        <div id="bakery">
+
+            <h2>Bakery</h2>
+
+            <h3>Fresh Daily! Homemade Italian Breads</h3>
+            <h3>Saturdays (9AM to 1PM)</h3>
+            <h3>Saturday and Sunday (9AM to 1PM)</h3>
+            <h3>Scorno's Bakery Originals</h3>
+
         </div>
 
-        <div id="photos">
-            <h2>Photos</h2>
+        <div id="sandwiches">
+            <h2>Sandwiches</h2>
+
+            <h3>Breakfast Sandwiches Served from 8AM to 11AM Daily</h3>
+            <h3>Lunch Sandwiches Served daily starting at 11AM</h3>
+            
         </div>
         
         <div id="about">
             <h2>About</h2>
 
+            <h3>History</h3>
+
+            <p>Scornovacca’s Ristorante’ of Des Moines, Iowa is a locally owned family restaurant chain. We have HOMEMADE Italian Sausage, Meatballs, Onion Rings and Cheese Sticks, Pizza Sauce, Spaghetti Sauce, Alfredo Sauce, Salad Dressings, etc. Sharing a taste of Italy since 1973.</p>
+
             <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/nKtlZ3EITvc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            <p> Check out our other locations below! </p>
+
+            <h3>News Letter</h3>
+        </div>
+
+        <div id="contact">
+            <p>contact info</p>
         </div>
 
         <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>

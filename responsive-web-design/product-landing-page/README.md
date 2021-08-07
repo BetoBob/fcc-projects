@@ -14,13 +14,13 @@
 
 #### nav-bar
 
-3. Within the `#header` element I can see a `nav` element with a corresponding `id="nav-bar"`.
+3. ~~Within the `#header` element I can see a `nav` element with a corresponding `id="nav-bar"`.~~
 
-4. I can see at least three clickable elements inside the `nav` element, each with the class `nav-link`.
+4. ~~I can see at least three clickable elements inside the `nav` element, each with the class `nav-link`.~~
 
-5. When I click a `.nav-link` button in the `nav` element, I am taken to the corresponding section of the landing page.
+5. ~~When I click a `.nav-link` button in the `nav` element, I am taken to the corresponding section of the landing page.~~
 
-13. The navbar should always be at the top of the viewport.
+13. ~~The navbar should always be at the top of the viewport.~~
 
 ### form
 
@@ -35,7 +35,7 @@
 
 6. ~~I can watch an embedded product video with `id="video"`.~~
 
-14. My product landing page should have at least one media query.
+14. ~~My product landing page should have at least one media query.~~
 15. My product landing page should utilize CSS flexbox at least once.
 
 ## layout
@@ -68,18 +68,21 @@ In the future though, I would prefer to have a photo album to show these posts. 
 
 ### About
 
-* links (put on bottom right)
-  * link to Facebook Page
-  * link to scornos
-  * link to order page
-
 Scorno's Restaurant and Bakery! Family owned since 1972!
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/nKtlZ3EITvc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 * https://youtu.be/nKtlZ3EITvc
+* email form (better than putting it at the top)
+* links (put on bottom right)
+  * link to Facebook Page
+  * link to scornos
+  * link to order page
 
 ## resources
 
 * [CSS Font-Size: em vs. px vs. pt vs. percent](https://kyleschaeffer.com/css-font-size-em-vs-px-vs-pt-vs-percent)
   * I am going to try using `em` rather than `px` for this project to see how better it scales
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/FEmysQARWFU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+

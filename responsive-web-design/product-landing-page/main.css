@@ -88,10 +88,9 @@ h2 {
 }
 
 #home p {
-    text-align: center;
     font-size: 1.25em;
-    margin-left: 2.5%;
-    margin-right: 2.5%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 #home-images {
@@ -174,6 +173,27 @@ h3 {
     margin-right: 2.5%;
 }
 
+/* about */
+
+#about p {
+    font-size: 1.25em;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.video-container {
+    display: block;
+    text-align: center;
+}
+
+#video {
+    width: 60%;
+    height: 25em;
+    max-width: 45em;
+}
+
 /* media queries */
 
 /* hides header at certain width */
@@ -190,6 +210,10 @@ h3 {
         margin-top: 1.5em;
     }
 
+    #video {
+        height: 15em;
+    }
+
     /* hide side image at top when screen small enough */
     .hide-img {
         display: none;
@@ -197,5 +221,6 @@ h3 {
     .center-img {
         width: 85%;
     }
+
 
 }

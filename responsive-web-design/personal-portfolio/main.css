@@ -1,0 +1,190 @@
+/* font imports */
+
+/* monoton */
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+/* tourney 300 */
+@import url('https://fonts.googleapis.com/css2?family=Tourney:wght@300&display=swap');
+
+/* Abel */
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 6em;
+}
+
+h2 {
+    color: black;
+    font-family: 'Tourney', cursive;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 2em;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+p {
+    font-family: 'Abel', sans-serif;
+    font-size: 1.25em;
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+/* navbar */
+
+header {
+    background-color: white;
+
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 6em;
+}
+
+.header-container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+#navbar {
+    text-align: center;
+}
+
+#navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#navbar li {
+    display: inline-block;
+    margin-left: 2em;
+    padding-top: 2.5em;
+}
+
+nav a {
+    color: black;
+    font-family: 'Tourney', cursive;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.25em;
+}
+
+nav a:hover {
+    color: goldenrod;
+}
+
+/* welcome section */
+
+#welcome-section {
+    background-image: url('assets/rainbow-line.gif');
+    background-size: 100% 100%;
+    height: 100vh; /* makes height equal to viewport */
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    
+    color: white;
+}
+
+#welcome-section h1 {
+    font-family: 'Monoton', cursive;
+    font-size: 100px;
+}
+
+#welcome-section h2 {
+    font-family: 'Tourney', cursive;
+    font-size: 40px;
+    color: white;
+}
+
+@media only screen and (max-width: 1400px) {
+    #welcome-section h1 {
+        font-size: 50px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    #welcome-section h2 {
+        font-family: 'Tourney', cursive;
+        font-size: 30px;
+        color: white;
+        margin-left: 10%;
+        margin-right: 10%;
+    }  
+ }
+
+/* project section */
+
+h3 {
+    text-align: center;
+    font-family: 'Abel', sans-serif;
+    font-size: 1.75em;
+    margin-bottom: 0.75em;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.codepen {
+    height: 300px; 
+    box-sizing: border-box; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    border: 2px solid; 
+    margin: 1em 0; 
+    padding: 1em;
+}
+
+.projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+.project-tile {
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    width: 40%;
+}
+
+@media only screen and (max-width: 1200px) {
+ .project-tile {
+     width: 80%;
+ }   
+}
+
+/* contact */
+#contact p {
+    text-align: center;
+}
+
+.contact-links {
+	width: 100%;
+    column-count: 2;
+    font-family: 'Abel', sans-serif;
+    text-align: center;
+    font-size: 1.25em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+#contact li {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}

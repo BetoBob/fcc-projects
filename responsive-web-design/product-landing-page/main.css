@@ -15,6 +15,7 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 10em;
 }
   
 /* header */
@@ -141,6 +142,7 @@ h3 {
 .menu-item {
     width: 20em;
     border: 0.2em double seagreen;
+    background-color: white;
     border-radius: 5%;
     margin-top: 1em;
     margin-bottom: 1em;
@@ -269,6 +271,5 @@ h3 {
     .center-img {
         width: 85%;
     }
-
 
 }
